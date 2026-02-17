@@ -108,7 +108,7 @@ export default function Home() {
           </div>
           
           <div className="pt-12 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
-             <p className="text-[#c5a059] text-[10px] tracking-[0.6em] uppercase font-bold">© 2026 PAUPET SOFT. All Rights Reserved</p>
+             <p className="text-[#c5a059] text-[10px] tracking-[0.6em] uppercase font-bold">© 2026 </p>
              <p className="text-white/40 text-[10px] tracking-widest uppercase font-medium">Experience comfort, convenience, and care – all under one roof.</p>
           </div>
         </div>
