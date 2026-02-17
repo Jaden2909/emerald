@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@theme {
+  --color-gold: #c5a059;
+  --color-emerald: #050a08;
+}
+
+:root {
+  --background: #050a08;
+  --foreground: #e2e8f0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* Firefox */
+}
+
+html::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+body {
+  background: #050a08;
+  color: #e2e8f0;
+  font-family: 'Times New Roman', serif;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: #c5a059;
+  color: black;
+}

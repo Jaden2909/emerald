@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", serif;
+  --color-gold: #c5a059;
+  --color-emerald: #050a08;
+}
+
+:root {
+  --background: #050a08;
+  --foreground: #ffffff;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  margin: 0;
+  font-family: ui-serif, Georgia, serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: #10b981; /* Emerald green highlight when text is selected */
+  color: white;
+}

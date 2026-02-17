@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #050a08; /* Deep Emerald Black */
+  --foreground: #e2e8f0;
+  --accent: #10b981; /* Emerald Green */
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Times New Roman', serif; /* Or a premium font like Playfair Display */
+}

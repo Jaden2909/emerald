@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+:root {
+  --background: #050a08;
+  --foreground: #ffffff;
+}
+
+body {
+  background: #050a08;
+  color: white;
+  margin: 0;
+}
+
+/* Ensure font-serif works as a backup */
+.font-serif {
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}
