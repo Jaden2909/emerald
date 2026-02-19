@@ -69,7 +69,7 @@ export default function Home() {
               
               <div className="mt-12 space-y-8 text-white/80 text-sm tracking-wide">
                 <div>
-                  <p className="text-[#c5a059] uppercase tracking-[0.3em] mb-2 font-bold">Emerald Rooms Serviced Apartment</p>
+                  <p className="text-[#c5a059] uppercase tracking-[0.3em] mb-2 font-bold">Emerald Suites Serviced Apartment</p>
                   <p className="leading-relaxed">Hennur-Bagalur Airport Road, Kothanur Main Rd,<br />Next to Sansar Centre.</p>
                   <p className="italic text-[#c5a059] mt-2 font-medium">Landmark: Near Empire Restaurant, Kothanur</p>
                 </div>
@@ -101,7 +101,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="mt-12 pl-10">
-                <p className="text-white italic text-2xl mb-2 text-right">Emerald Signature | Grand | Suites</p>
+                <p className="text-white italic text-2xl mb-2 text-right">Emerald Signature | Grand | Rooms</p>
                 <p className="text-white/60 text-[11px] text-right uppercase tracking-[0.4em] font-bold">Hospitality You Can Trust Since 2018</p>
               </div>
             </div>
