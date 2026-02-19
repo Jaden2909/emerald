@@ -1,8 +1,6 @@
 html {
   scroll-behavior: smooth;
-}
-
-@import "tailwindcss";
+}@import "tailwindcss";
 
 @theme {
   --font-serif: "Playfair Display", serif;

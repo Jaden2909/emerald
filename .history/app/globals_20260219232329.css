@@ -1,7 +1,3 @@
-html {
-  scroll-behavior: smooth;
-}
-
 @import "tailwindcss";
 
 @theme {
@@ -9,6 +5,7 @@ html {
   --color-gold: #c5a059;
   --color-emerald: #050a08;
 }
+
 
 :root {
   --background: #050a08;
