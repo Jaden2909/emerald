@@ -19,22 +19,11 @@ export default function SignaturePage() {
           <div className="grid md:grid-cols-2 gap-20 items-start">
             <motion.div initial={{ opacity: 0, x: -30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8 }}>
               <h1 className="text-6xl md:text-8xl font-serif italic mb-8">Emerald Signature</h1>
-              <p className="text-[#c5a059] text-sm tracking-[0.4em] uppercase mb-8 font-bold">Kannur, Bangalore • Rooms & Apartments</p>
+              <p className="text-[#c5a059] text-sm tracking-[0.4em] uppercase mb-8 font-bold">Kannur, B • Rooms & Apartments</p>
               <p className="text-white/70 text-lg leading-relaxed font-light italic mb-8">
                 The peak of comfort on Hennur Airport Road. High-end interiors with easy access to the International Airport for discerning travelers.
               </p>
-
-              {/* Contact Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4 mt-10">
-                <a href="tel:+917829591338" className="inline-block border border-[#c5a059] text-[#c5a059] px-6 py-3 uppercase tracking-[0.2em] text-[10px] font-bold hover:bg-[#c5a059] hover:text-black transition-all text-center">
-                  Contact Us: 7829591338
-                </a>
-                <a href="tel:+919148692077" className="inline-block border border-white/20 text-white px-6 py-3 uppercase tracking-[0.2em] text-[10px] font-bold hover:bg-white hover:text-black transition-all text-center">
-                  Contact Us: 9148692077
-                </a>
-              </div>
             </motion.div>
-            
             <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8 }} className="aspect-[4/5] border border-white/10 overflow-hidden">
               <img src="/prop-signature.jpg" className="w-full h-full object-cover" alt="Emerald Signature" />
             </motion.div>
@@ -69,12 +58,15 @@ export default function SignaturePage() {
         </div>
       </section>
 
-      <section className="py-24 bg-white/[0.02] border-y border-white/10 px-6 text-center">
-        <h2 className="text-4xl font-serif italic mb-8 text-white">Ready to experience the best?</h2>
-        <Link href="/#contact" className="inline-block border border-[#c5a059] text-[#c5a059] px-12 py-4 uppercase tracking-[0.3em] text-[10px] font-bold hover:bg-[#c5a059] hover:text-black transition-all">
-          Book Your Stay Now
-        </Link>
-      </section>
+    <section className="py-24 bg-white/[0.02] border-y border-white/10 px-6 text-center">
+  <h2 className="text-4xl font-serif italic mb-8 text-white">Ready to experience the best?</h2>
+  <Link 
+    href="/#contact" 
+    className="inline-block border border-[#c5a059] text-[#c5a059] px-12 py-4 uppercase tracking-[0.3em] text-[10px] font-bold hover:bg-[#c5a059] hover:text-black transition-all"
+  >
+    Book Your Stay Now
+  </Link>
+</section>
     </main>
   );
 }

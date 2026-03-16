@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const properties = [
   {
-    title: "Emerald Suites",
+    title: "Emerald Suit",
     slug: "rooms",
     location: "Kothanur Main Rd",
     tag: "Serviced Apartments",
@@ -22,7 +22,7 @@ const properties = [
   {
     title: "Emerald Signature",
     slug: "signature",
-    location: "Kannur, Bangalore",
+    location: "Kannur",
     tag: "Rooms & Apartments",
     description: "The peak of comfort on Hennur Airport Road. High-end interiors with easy access to the International Airport.",
     image: "/prop-signature.jpg"

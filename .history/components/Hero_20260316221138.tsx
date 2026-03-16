@@ -49,7 +49,7 @@ export default function Hero() {
 
           {/* Right: Property Links - Subtler & Slower Animation */}
           <div className="md:col-span-4 flex flex-col space-y-4 md:border-l md:border-white/10 md:pl-10 text-left">
-            <span className="text-[#c5a059] text-[12px] tracking-[0.4em] uppercase font-bold mb-2 opacity-80">
+            <span className="text-[#c5a059] text-[11px] tracking-[0.4em] uppercase font-bold mb-2 opacity-80">
               Explore Properties
             </span>
             {quickLinks.map((link) => (

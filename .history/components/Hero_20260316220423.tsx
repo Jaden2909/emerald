@@ -14,7 +14,7 @@ export default function Hero() {
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1.5, ease: "easeOut" }}
+        transition={{ duration: 1.2, ease: "easeOut" }}
         className="text-center z-10 w-full max-w-5xl px-6"
       >
         {/* Top Tagline */}
@@ -22,13 +22,13 @@ export default function Hero() {
           Redefining Luxury
         </h2>
 
-        {/* Main Title */}
+        {/* Main Title - Reduced slightly for better proportions */}
         <h1 className="text-6xl md:text-8xl font-light mb-6 text-white tracking-tight">
           Emerald Rooms
         </h1>
 
-        {/* Center Tagline - Color matched to about paragraph */}
-        <p className="text-xl text-gray-300 italic mb-8">
+        {/* Center Tagline - Reverted to original styling, slightly larger size */}
+        <p className="text-xl text-gray-400 italic mb-8">
           Service suiting your lifestyle!
         </p>
 
@@ -38,7 +38,7 @@ export default function Hero() {
         {/* Bottom Section: Two Columns */}
         <div className="grid md:grid-cols-12 gap-12 items-start pt-4">
           
-          {/* Left: About Text */}
+          {/* Left: About Text - Enhanced readability with shadowing instead of boxes */}
           <div className="md:col-span-8 text-left">
             <p className="text-gray-300 font-light tracking-wide leading-relaxed text-base md:text-lg drop-shadow-md">
               Experience unparalleled comfort in our meticulously designed suites. 
@@ -47,19 +47,18 @@ export default function Hero() {
             </p>
           </div>
 
-          {/* Right: Property Links - Subtler & Slower Animation */}
+          {/* Right: Property Links */}
           <div className="md:col-span-4 flex flex-col space-y-4 md:border-l md:border-white/10 md:pl-10 text-left">
-            <span className="text-[#c5a059] text-[12px] tracking-[0.4em] uppercase font-bold mb-2 opacity-80">
+            <span className="text-[#c5a059] text-[10px] tracking-[0.4em] uppercase font-bold mb-2 opacity-80">
               Explore Properties
             </span>
             {quickLinks.map((link) => (
               <Link 
                 key={link.href} 
                 href={link.href}
-                className="text-white/50 hover:text-emerald-500 transition-all duration-700 ease-[cubic-bezier(0.23,1,0.32,1)] font-serif italic text-xl flex items-center group"
+                className="text-white/60 hover:text-emerald-500 transition-all font-serif italic text-xl flex items-center group"
               >
-                {/* Line animation: Slower and softer width transition */}
-                <span className="w-0 group-hover:w-8 h-[1px] bg-emerald-500/50 transition-all duration-1000 ease-in-out mr-0 group-hover:mr-4"></span>
+                <span className="w-0 group-hover:w-6 h-[1px] bg-emerald-500 transition-all mr-0 group-hover:mr-3"></span>
                 {link.name}
               </Link>
             ))}
@@ -67,7 +66,7 @@ export default function Hero() {
         </div>
       </motion.div>
 
-      {/* Background Image */}
+      {/* Background Image - Clean */}
       <div className="absolute inset-0 bg-[url('/hero-bg.jpg')] bg-cover bg-center opacity-30"></div>
     </section>
   );
