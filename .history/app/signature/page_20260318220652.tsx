@@ -62,34 +62,6 @@ export default function SignaturePage() {
           </div>
         </div>
       </section>
-
-      {/* RESTORED SECTION */}
-      <section className="py-24 border-t border-white/10 px-6">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16">
-          <div>
-            <h3 className="text-[#c5a059] text-[10px] tracking-[0.5em] uppercase mb-8 font-bold">The Experience</h3>
-            <ul className="space-y-4 text-white/80 font-serif italic text-xl">
-              <li>High-End VIP Suites</li>
-              <li>Modern Deluxe Rooms</li>
-              <li>Signature Event Hall</li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="text-[#c5a059] text-[10px] tracking-[0.5em] uppercase mb-8 font-bold">Connectivity</h3>
-            <p className="text-white/60 leading-relaxed font-light italic text-lg">
-              Strategically located on the main Airport Road in Kannur.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* RESTORED SECTION */}
-      <section className="py-24 bg-white/[0.02] border-y border-white/10 px-6 text-center">
-        <h2 className="text-4xl font-serif italic mb-8 text-white">Hospitality with a Signature Touch</h2>
-        <Link href="/#contact" className="inline-block border border-[#c5a059] text-[#c5a059] px-12 py-4 uppercase tracking-[0.3em] text-[10px] font-bold hover:bg-[#c5a059] hover:text-black transition-all">
-          Book VIP Suite
-        </Link>
-      </section>
     </main>
   );
 }

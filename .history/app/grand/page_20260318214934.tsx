@@ -19,18 +19,18 @@ export default function GrandPage() {
         </Link>
       </div>
       
-      <section className="pt-40 pb-10 px-6">
+      <section className="pt-40 pb-20 px-6">
         <div className="max-w-7xl mx-auto">
           <Link href="/#properties" className="text-[#c5a059] text-[10px] tracking-[0.5em] uppercase mb-12 inline-block hover:opacity-50 transition-all font-bold">
             ← Back to Collection
           </Link>
-          <div className="grid md:grid-cols-2 gap-20 items-center">
+          <div className="grid md:grid-cols-2 gap-20 items-start">
             <motion.div initial={{ opacity: 0, x: -30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8 }}>
               <h1 className="text-6xl md:text-8xl font-serif italic mb-8">Emerald Grand</h1>
               <p className="text-[#c5a059] text-sm tracking-[0.4em] uppercase mb-8 font-bold">Byrathi • Rooms & Suites</p>
               <div className="space-y-6 text-white/70 text-lg leading-relaxed font-light italic mb-8">
-                <p>Emerald Grand is a premium extension of the Emerald hospitality experience, designed to offer enhanced comfort and versatility.</p>
-                <p>Deluxe Rooms, 2 BHK serviced apartments, and a boutique party hall for corporate meetings.</p>
+                <p>Emerald Grand is a premium extension of the Emerald hospitality experience, designed to offer enhanced comfort, space, and versatility for every type of guest.</p>
+                <p>We offer well-appointed Deluxe Rooms and spacious 2 BHK serviced apartments. In addition, our party hall makes Emerald Grand an ideal destination for small events and corporate meetings.</p>
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4 mt-10">
@@ -43,19 +43,19 @@ export default function GrandPage() {
               </div>
             </motion.div>
             
-            <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8 }} className="max-h-[500px] border border-white/10 overflow-hidden shadow-2xl">
+            <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8 }} className="aspect-[4/5] border border-white/10 overflow-hidden shadow-2xl">
               <img src="/prop-grand.jpg" className="w-full h-full object-cover" alt="Emerald Grand" />
             </motion.div>
           </div>
         </div>
       </section>
 
-      <section className="py-16 border-t border-white/10 px-6 bg-white/[0.01]">
+      <section className="py-24 border-t border-white/10 px-6 bg-white/[0.01]">
         <div className="max-w-7xl mx-auto">
           <h3 className="text-[#c5a059] text-[10px] tracking-[0.5em] uppercase mb-12 font-bold text-center">Our Services & Amenities</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-y-8 gap-x-12">
             {services.map((service, index) => (
-              <div key={index} className="text-white/60 font-serif italic text-lg border-l border-emerald-500/20 pl-4">
+              <div key={index} className="text-white/60 font-serif italic text-lg border-l border-emerald-500/20 pl-4 italic">
                 {service}
               </div>
             ))}
@@ -63,7 +63,6 @@ export default function GrandPage() {
         </div>
       </section>
 
-      {/* RESTORED SECTION */}
       <section className="py-24 border-t border-white/10 px-6">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16">
           <div>
@@ -77,13 +76,12 @@ export default function GrandPage() {
           <div>
             <h3 className="text-[#c5a059] text-[10px] tracking-[0.5em] uppercase mb-8 font-bold">Location</h3>
             <p className="text-white/60 leading-relaxed font-light italic text-lg">
-              457/16 SIACS Road, Off Hennur Airport Road. Located behind the Bescom Office in Byrathi.
+              457/16 SIACS Road, Off Hennur Airport Road. Located behind the Bescom Office in Byrathi. A quiet, prestigious neighborhood for corporate and family stays.
             </p>
           </div>
         </div>
       </section>
 
-      {/* RESTORED SECTION */}
       <section className="py-24 bg-white/[0.02] border-y border-white/10 px-6 text-center">
         <h2 className="text-4xl font-serif italic mb-8 text-white">Experience Enhanced Luxury</h2>
         <Link href="/#contact" className="inline-block border border-[#c5a059] text-[#c5a059] px-12 py-4 uppercase tracking-[0.3em] text-[10px] font-bold hover:bg-[#c5a059] hover:text-black transition-all">

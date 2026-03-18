@@ -6,15 +6,6 @@ import { useState, useEffect } from "react";
 export default function Hero() {
   const [isAboutOpen, setIsAboutOpen] = useState(false);
 
-  // Toggle Scroll Lock
-  useEffect(() => {
-    if (isAboutOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "unset";
-    }
-  }, [isAboutOpen]);
-
   // Listen for Navbar "About" click
   useEffect(() => {
     const handleOpen = () => setIsAboutOpen(true);
@@ -36,7 +27,7 @@ export default function Hero() {
         transition={{ duration: 1.5 }}
         className="z-10 w-full max-w-7xl px-10"
       >
-        {/* Top Tagline - Centered */}
+        {/* Only Top Tagline stays Centered */}
         <div className="text-center mb-16">
           <h2 className="text-emerald-500 text-sm md:text-base uppercase tracking-[0.5em] font-medium">
             Hospitality Redefined
@@ -46,7 +37,7 @@ export default function Hero() {
         {/* Main Content Grid: 70/30 Split */}
         <div className="grid md:grid-cols-12 gap-16 items-start">
           
-          {/* Left: 70% - Text Content */}
+          {/* Left: 60-70% - Left Aligned Text */}
           <div className="md:col-span-8 text-left space-y-8">
             <motion.h1 
               initial={{ x: -30, opacity: 0 }}
@@ -57,7 +48,7 @@ export default function Hero() {
               Emerald Rooms
             </motion.h1>
 
-            <p className="text-xl text-gray-300 italic">
+            <p className="text-xl text-gray-400 italic">
               Service suiting your lifestyle!
             </p>
 
@@ -78,7 +69,7 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Right: 30% - Property Cards */}
+          {/* Right: 30-40% - Property Links with Ghost Button Styling */}
           <div className="md:col-span-4 flex flex-col space-y-6 pt-12">
             <span className="text-[#c5a059] text-[10px] tracking-[0.4em] uppercase font-bold mb-4 opacity-60">
               Explore Properties
@@ -97,6 +88,7 @@ export default function Hero() {
                     {link.loc}
                   </span>
                 </div>
+                {/* Subtle internal glow/shadow effect */}
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 bg-gradient-to-r from-emerald-500/10 to-transparent pointer-events-none" />
               </Link>
             ))}
@@ -111,19 +103,16 @@ export default function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            onClick={() => setIsAboutOpen(false)} // Close on click outside
-            className="fixed inset-0 z-[100] bg-[#050a08]/95 backdrop-blur-xl flex items-center justify-center p-6 cursor-pointer"
+            className="fixed inset-0 z-[100] bg-[#050a08]/95 backdrop-blur-xl flex items-center justify-center p-6"
           >
             <motion.div 
               initial={{ y: 50, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
-              exit={{ y: 50, opacity: 0 }}
-              onClick={(e) => e.stopPropagation()} // Prevent click inside from closing
-              className="max-w-3xl w-full bg-white/[0.03] p-12 border border-white/10 relative cursor-default"
+              className="max-w-3xl w-full bg-white/[0.03] p-12 border border-white/10 relative"
             >
               <button 
                 onClick={() => setIsAboutOpen(false)}
-                className="absolute top-6 right-6 text-white/50 hover:text-white tracking-widest text-[10px] uppercase transition-colors"
+                className="absolute top-6 right-6 text-white/50 hover:text-white tracking-widest text-[10px] uppercase"
               >
                 Close ✕
               </button>
@@ -131,7 +120,7 @@ export default function Hero() {
               <div className="space-y-6 text-gray-300 font-light leading-relaxed text-lg italic">
                 <p>Welcome to Emerald Suites</p>
                 <p>Founded in 2018 with just four rooms and a strong commitment to exceptional service, Emerald Suites has grown into a trusted name in hospitality across Bangalore. What began as a small initiative driven by passion and personalized care has now expanded into a network of four premium properties, offering over 70 well-appointed rooms in and around the city.</p>
-                <p>At Emerald Suites, we believe that true hospitality goes beyond providing a place to stay—it’s about creating comfort, convenience, and memorable experiences for every guest. Our journey of growth reflects the trust and satisfaction of our guests, who continue to choose us for our quality service and warm, welcoming atmosphere.</p>
+                <p>At Emerald Suites, we believe that true hospitality goes beyond providing a place to stay—it’s about creating comfort, convenience, and memorable experiences for every guest.</p>
                 <p>As we move forward, our vision is to take the Emerald experience beyond Bangalore and establish Emerald Rooms across the world, delivering the same excellence everywhere we go.</p>
                 <p className="text-emerald-500 pt-4 font-normal not-italic tracking-[0.2em] uppercase text-sm">Emerald Suites – Service Suiting Your Lifestyle.</p>
               </div>
@@ -140,7 +129,7 @@ export default function Hero() {
         )}
       </AnimatePresence>
 
-      <div className="absolute inset-0 bg-[url('/hero-bg.jpg')] bg-cover bg-center opacity-30"></div>
+      <div className="absolute inset-0 bg-[url('/hero-bg.jpg')] bg-cover bg-center opacity-20"></div>
     </section>
   );
 }

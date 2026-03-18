@@ -5,16 +5,17 @@ import Image from "next/image";
 
 export default function Navbar() {
   const scrollToSection = (id: string) => {
-    if (id === 'about') {
-      window.dispatchEvent(new CustomEvent('openAbout'));
-      return;
-    }
     const element = document.getElementById(id);
-    element?.scrollIntoView({ behavior: "smooth" });
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    } else if (id === 'about') {
+      // Custom event to open the About Modal in Hero
+      window.dispatchEvent(new CustomEvent('openAbout'));
+    }
   };
 
   return (
-    <nav className="fixed top-0 w-full z-50 flex justify-between items-center px-10 py-6 bg-gradient-to-b from-black/80 to-transparent font-sans">
+    <nav className="fixed top-0 w-full z-50 flex justify-between items-center px-10 py-6 bg-gradient-to-b from-black/80 to-transparent">
       <div className="relative w-32 h-16 cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
         <Image 
           src="/logo.png" 
