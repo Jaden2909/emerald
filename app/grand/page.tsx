@@ -3,13 +3,25 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 
 export default function GrandPage() {
-  const services = [
-    "24 Hours Check-in & Out", "Daily Housekeeping", "24 Hours Room Service",
-    "Doctor on Call", "Hot Water Supply", "Power Backup", "Travel Assistance",
-    "24/7 Reception Support", "CCTV Security", "Free Wi-Fi Access",
-    "Covered Parking", "Laundry Service", "Fully Furnished Units",
-    "Kitchen Facilities*", "Weekly/Monthly Packages", "Group Booking Facilities"
-  ];
+ const services = [
+  "24 Hours Check-in & Check-out",
+  "Daily Housekeeping",
+  "24 Hours Room Service",
+  "Doctor on Call",
+  "Hot Water Supply",
+  "Power Backup",
+  "Travel Assistance",
+  "24/7 Reception Support",
+  "CCTV Security",
+  "Free Wi-Fi Access",
+  "Covered Parking",
+  "Laundry Service (On Request)",
+  "Fully Furnished Rooms & Apartments",
+  "Kitchen Facilities in Selected Units",
+  "Weekly & Monthly Package Discounts",
+  "Family-Friendly Environment",
+  "Group Booking Facilities"
+];
 
   return (
     <main className="bg-[#050a08] min-h-screen text-white relative">
@@ -26,12 +38,27 @@ export default function GrandPage() {
           </Link>
           <div className="grid md:grid-cols-2 gap-20 items-center">
             <motion.div initial={{ opacity: 0, x: -30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8 }}>
-              <h1 className="text-6xl md:text-8xl font-serif italic mb-8">Emerald Grand</h1>
-              <p className="text-[#c5a059] text-sm tracking-[0.4em] uppercase mb-8 font-bold">Byrathi • Rooms & Suites</p>
-              <div className="space-y-6 text-white/70 text-lg leading-relaxed font-light italic mb-8">
-                <p>Emerald Grand is a premium extension of the Emerald hospitality experience, designed to offer enhanced comfort and versatility.</p>
-                <p>Deluxe Rooms, 2 BHK serviced apartments, and a boutique party hall for corporate meetings.</p>
-              </div>
+            <h1 className="text-6xl md:text-8xl font-serif italic mb-8">
+  Emerald Grand
+</h1>
+
+<p className="text-[#c5a059] text-sm tracking-[0.4em] uppercase mb-8 font-bold">
+  Byrathi • Rooms & Suites
+</p>
+
+<div className="space-y-6 text-white/70 text-lg leading-relaxed font-light italic mb-8">
+  <p>
+    Emerald Grand is a premium extension of the Emerald hospitality experience, designed to offer enhanced comfort, space, and versatility for every type of guest. With a perfect blend of elegance and functionality, it caters to both short and extended stays.
+  </p>
+
+  <p>
+    We offer well-appointed Deluxe Rooms and spacious 2 BHK serviced apartments, thoughtfully designed to provide maximum comfort and convenience. In addition, our party hall makes Emerald Grand an ideal destination for small events, gatherings, and corporate meetings.
+  </p>
+
+  <p>
+    Perfectly suited for corporate travelers, families, and group bookings, Emerald Grand ensures a comfortable and memorable stay experience with a touch of class and warm hospitality.
+  </p>
+</div>
 
               <div className="flex flex-col sm:flex-row gap-4 mt-10">
                 <a href="tel:+917829591338" className="inline-block border border-[#c5a059] text-[#c5a059] px-6 py-3 uppercase tracking-[0.2em] text-[10px] font-bold hover:bg-[#c5a059] hover:text-black transition-all text-center">
