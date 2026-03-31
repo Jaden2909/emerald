@@ -26,6 +26,8 @@ export default function Hero() {
     { name: "Emerald Suites", loc: "Kothanur", href: "/rooms" },
     { name: "Emerald Grand", loc: "Byrathi", href: "/grand" },
     { name: "Emerald Signature", loc: "Kannur, Bangalore", href: "/signature" },
+     { name: "Mini Party HallEmerald Mini Party Hall,Conferrence rooms", loc: "Bangalore", href: "/" },
+
   ];
 
   return (
@@ -81,7 +83,7 @@ export default function Hero() {
           {/* Right: 30% - Property Cards */}
           <div className="md:col-span-4 flex flex-col space-y-6 pt-12">
             <span className="text-[#c5a059] text-[10px] tracking-[0.4em] uppercase font-bold mb-4 opacity-60">
-              Explore Properties
+              Explore Our Properties
             </span>
             {quickLinks.map((link, i) => (
               <Link 

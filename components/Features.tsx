@@ -26,7 +26,8 @@ const properties = [
     tag: "Rooms & Apartments",
     description: "The peak of comfort on Hennur Airport Road. High-end interiors with easy access to the International Airport.",
     image: "/prop-signature.jpg"
-  }
+  },
+ 
 ];
 
 export default function Features() {

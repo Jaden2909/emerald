@@ -5,6 +5,7 @@ import Features from '@/components/Features';
 import Dining from '@/components/Dining';
 import Wellness from '@/components/Wellness';
 import { motion } from "framer-motion";
+import BookingSection from '@/components/BookingSection';
 
 export default function Home() {
   return (
@@ -18,6 +19,9 @@ export default function Home() {
       {/* 1. PROPERTIES */}
       <div id="properties">
         <Features />
+      </div>
+       <div id="booking">
+        <BookingSection />
       </div>
 
       {/* 2. CELEBRATIONS */}
@@ -69,7 +73,7 @@ export default function Home() {
               
               <div className="mt-12 space-y-8 text-white/80 text-sm tracking-wide">
                 <div>
-                  <p className="text-[#c5a059] uppercase tracking-[0.3em] mb-2 font-bold">Emerald Suites Serviced Apartment</p>
+                  <p className="text-[#c5a059] uppercase tracking-[0.3em] mb-2 font-bold">Emerald Rooms Serviced Apartment</p>
                   <p className="leading-relaxed">Hennur-Bagalur Airport Road, Kothanur Main Rd,<br />Next to Sansar Centre.</p>
                   <p className="italic text-[#c5a059] mt-2 font-medium">Landmark: Near Empire Restaurant, Kothanur</p>
                 </div>
@@ -108,7 +112,7 @@ export default function Home() {
           </div>
           
           <div className="pt-12 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
-             <p className="text-[#c5a059] text-[10px] tracking-[0.6em] uppercase font-bold">© 2026 </p>
+             <p className="text-[#c5a059] text-[10px] tracking-[0.6em] uppercase font-bold">© 2026 PAUPET SOFT. All Rights Reserved</p>
              <p className="text-white/40 text-[10px] tracking-widest uppercase font-medium">Experience comfort, convenience, and care – all under one roof.</p>
           </div>
         </div>

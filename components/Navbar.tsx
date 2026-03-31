@@ -25,6 +25,9 @@ export default function Navbar() {
       </div>
       
       <div className="hidden md:flex space-x-12 text-[10px] tracking-[0.4em] uppercase font-light text-white/70">
+      <button onClick={() => scrollToSection('booking')} className="hover:text-[#c5a059] transition-colors">
+  Booking
+</button>
         <button onClick={() => scrollToSection('about')} className="hover:text-[#c5a059] transition-colors">About</button>
         <button onClick={() => scrollToSection('properties')} className="hover:text-[#c5a059] transition-colors">Suites</button>
         <button onClick={() => scrollToSection('dining')} className="hover:text-[#c5a059] transition-colors">Dining</button>

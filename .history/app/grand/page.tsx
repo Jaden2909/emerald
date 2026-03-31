@@ -2,14 +2,26 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 
-export default function SignaturePage() {
-  const services = [
-    "24 Hours Check-in & Out", "VIP Suite Access", "24 Hours Room Service",
-    "Daily Housekeeping", "Power Backup", "Doctor on Call", "CCTV Security",
-    "24/7 Reception Support", "Free Wi-Fi Access", "Covered Parking",
-    "Airport Travel Assistance", "Laundry Service", "Fully Furnished Rooms",
-    "Weekly/Monthly Discounts", "Event Hall Access", "Family Friendly"
-  ];
+export default function GrandPage() {
+ const services = [
+  "24 Hours Check-in & Check-out",
+  "Daily Housekeeping",
+  "24 Hours Room Service",
+  "Doctor on Call",
+  "Hot Water Supply",
+  "Power Backup",
+  "Travel Assistance",
+  "24/7 Reception Support",
+  "CCTV Security",
+  "Free Wi-Fi Access",
+  "Covered Parking",
+  "Laundry Service (On Request)",
+  "Fully Furnished Rooms & Apartments",
+  "Kitchen Facilities in Selected Units",
+  "Weekly & Monthly Package Discounts",
+  "Family-Friendly Environment",
+  "Group Booking Facilities"
+];
 
   return (
     <main className="bg-[#050a08] min-h-screen text-white relative">
@@ -26,12 +38,27 @@ export default function SignaturePage() {
           </Link>
           <div className="grid md:grid-cols-2 gap-20 items-center">
             <motion.div initial={{ opacity: 0, x: -30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8 }}>
-              <h1 className="text-6xl md:text-8xl font-serif italic mb-8">Emerald Signature</h1>
-              <p className="text-[#c5a059] text-sm tracking-[0.4em] uppercase mb-8 font-bold">Kannur, Bangalore • VIP Suites & Rooms</p>
-              <div className="space-y-6 text-white/70 text-lg leading-relaxed font-light italic mb-8">
-                <p>Flagship destination on Airport Road. Representing the finest expression of the Emerald brand.</p>
-                <p>VIP Suites, Deluxe Rooms, and a party hall for celebrations near Bangalore's aviation hub.</p>
-              </div>
+            <h1 className="text-6xl md:text-8xl font-serif italic mb-8">
+  Emerald Grand
+</h1>
+
+<p className="text-[#c5a059] text-sm tracking-[0.4em] uppercase mb-8 font-bold">
+  Byrathi • Rooms & Suites
+</p>
+
+<div className="space-y-6 text-white/70 text-lg leading-relaxed font-light italic mb-8">
+  <p>
+    Emerald Grand is a premium extension of the Emerald hospitality experience, designed to offer enhanced comfort, space, and versatility for every type of guest. With a perfect blend of elegance and functionality, it caters to both short and extended stays.
+  </p>
+
+  <p>
+    We offer well-appointed Deluxe Rooms and spacious 2 BHK serviced apartments, thoughtfully designed to provide maximum comfort and convenience. In addition, our party hall makes Emerald Grand an ideal destination for small events, gatherings, and corporate meetings.
+  </p>
+
+  <p>
+    Perfectly suited for corporate travelers, families, and group bookings, Emerald Grand ensures a comfortable and memorable stay experience with a touch of class and warm hospitality.
+  </p>
+</div>
 
               <div className="flex flex-col sm:flex-row gap-4 mt-10">
                 <a href="tel:+917829591338" className="inline-block border border-[#c5a059] text-[#c5a059] px-6 py-3 uppercase tracking-[0.2em] text-[10px] font-bold hover:bg-[#c5a059] hover:text-black transition-all text-center">
@@ -44,7 +71,7 @@ export default function SignaturePage() {
             </motion.div>
             
             <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8 }} className="max-h-[500px] border border-white/10 overflow-hidden shadow-2xl">
-              <img src="/prop-signature.jpg" className="w-full h-full object-cover" alt="Emerald Signature" />
+              <img src="/prop-grand.jpg" className="w-full h-full object-cover" alt="Emerald Grand" />
             </motion.div>
           </div>
         </div>
@@ -52,7 +79,7 @@ export default function SignaturePage() {
 
       <section className="py-16 border-t border-white/10 px-6 bg-white/[0.01]">
         <div className="max-w-7xl mx-auto">
-          <h3 className="text-[#c5a059] text-[10px] tracking-[0.5em] uppercase mb-12 font-bold text-center">Premium Services & Amenities</h3>
+          <h3 className="text-[#c5a059] text-[10px] tracking-[0.5em] uppercase mb-12 font-bold text-center">Our Services & Amenities</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-y-8 gap-x-12">
             {services.map((service, index) => (
               <div key={index} className="text-white/60 font-serif italic text-lg border-l border-emerald-500/20 pl-4">
@@ -67,17 +94,17 @@ export default function SignaturePage() {
       <section className="py-24 border-t border-white/10 px-6">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16">
           <div>
-            <h3 className="text-[#c5a059] text-[10px] tracking-[0.5em] uppercase mb-8 font-bold">The Experience</h3>
+            <h3 className="text-[#c5a059] text-[10px] tracking-[0.5em] uppercase mb-8 font-bold">Accommodations</h3>
             <ul className="space-y-4 text-white/80 font-serif italic text-xl">
-              <li>High-End VIP Suites</li>
-              <li>Modern Deluxe Rooms</li>
-              <li>Signature Event Hall</li>
+              <li>Luxury Deluxe Rooms</li>
+              <li>Spacious 2 BHK Serviced Apartments</li>
+              <li>Boutique Party Hall & Event Space</li>
             </ul>
           </div>
           <div>
-            <h3 className="text-[#c5a059] text-[10px] tracking-[0.5em] uppercase mb-8 font-bold">Connectivity</h3>
+            <h3 className="text-[#c5a059] text-[10px] tracking-[0.5em] uppercase mb-8 font-bold">Location</h3>
             <p className="text-white/60 leading-relaxed font-light italic text-lg">
-              Strategically located on the main Airport Road in Kannur.
+              457/16 SIACS Road, Off Hennur Airport Road. Located behind the Bescom Office in Byrathi.
             </p>
           </div>
         </div>
@@ -85,9 +112,9 @@ export default function SignaturePage() {
 
       {/* RESTORED SECTION */}
       <section className="py-24 bg-white/[0.02] border-y border-white/10 px-6 text-center">
-        <h2 className="text-4xl font-serif italic mb-8 text-white">Hospitality with a Signature Touch</h2>
+        <h2 className="text-4xl font-serif italic mb-8 text-white">Experience Enhanced Luxury</h2>
         <Link href="/#contact" className="inline-block border border-[#c5a059] text-[#c5a059] px-12 py-4 uppercase tracking-[0.3em] text-[10px] font-bold hover:bg-[#c5a059] hover:text-black transition-all">
-          Book VIP Suite
+          Inquire for Group Bookings
         </Link>
       </section>
     </main>
